@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sibu-comments-app/static/css/main.6ae2fc0c.css",
+    "main.js": "/sibu-comments-app/static/js/main.0ed2dd7e.js",
+    "static/media/Ufc.mp4": "/sibu-comments-app/static/media/Ufc.45c159d66a9d0e2b2542.mp4",
+    "static/media/mysticlegends.mp4": "/sibu-comments-app/static/media/mysticlegends.7c7eb93a35f20e45f382.mp4",
+    "static/media/gtaV.mp4": "/sibu-comments-app/static/media/gtaV.f470be03f64b0eba98ac.mp4",
+    "static/media/kfc.jpg": "/sibu-comments-app/static/media/kfc.08320fa9bd731284313d.jpg",
+    "static/media/tomato.jpg": "/sibu-comments-app/static/media/tomato.b41f1e3d83645deaf1b0.jpg",
+    "static/media/pie.jpg": "/sibu-comments-app/static/media/pie.f3a3c9a37be3d3c90398.jpg",
+    "static/media/Spinach.jpg": "/sibu-comments-app/static/media/Spinach.9e11e1ca3254112443a5.jpg",
+    "index.html": "/sibu-comments-app/index.html",
+    "main.6ae2fc0c.css.map": "/sibu-comments-app/static/css/main.6ae2fc0c.css.map",
+    "main.0ed2dd7e.js.map": "/sibu-comments-app/static/js/main.0ed2dd7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ae2fc0c.css",
+    "static/js/main.0ed2dd7e.js"
+  ]
+}
