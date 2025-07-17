@@ -13,31 +13,22 @@ export default function Login({ setUser }) {
 
     try {
       const res = await axios.post(`${API}/auth/login`, form);
-      console.log("Login response:", res.data);
 
-      if (!res.data.token) {
-        // 🚨 Fallback: No token, auto-login as guest (for demo only)
-        alert("No token received. Logging in as guest.");
-        localStorage.setItem("token", "guest-demo-token");
-        setUser(true);
-        navigate("/");
+      console.log("Login response:", res.data); // Debugging
+
+      if (!res.data.success) {
+        alert("Login failed. Please check your credentials.");
         return;
       }
 
-      localStorage.setItem("token", res.data.token);
-      setUser(true);
+      // Set user logged in (can pass user info too)
+      setUser(res.data.user); // or just setUser(true)
+
+      // Navigate to homepage
       navigate("/");
     } catch (err) {
       console.error("Login failed:", err.response?.data || err.message);
-
-      // ⚠️ Optional: Auto-login as guest in dev
-      if (window.confirm("Login failed. Proceed as guest?")) {
-        localStorage.setItem("token", "guest-demo-token");
-        setUser(true);
-        navigate("/");
-      } else {
-        alert("Login failed. Please try again.");
-      }
+      alert("Invalid email or password.");
     }
   };
 
